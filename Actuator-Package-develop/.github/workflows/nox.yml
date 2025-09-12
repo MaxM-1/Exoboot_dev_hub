@@ -1,0 +1,28 @@
+name: "nox"
+
+on:
+  pull_request:
+  push:
+
+jobs:
+  linting:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3.3.0
+
+      - name: Setup Python
+        uses: actions/setup-python@v4.5.0
+        with:
+          python-version: "3.11"
+
+      - name: Setup Poetry
+        # We install poetry instead of nox, even though the noxfile installs poetry
+        # so that both will use the versions specified in the poetry.lock file
+        run: python3 -m pip install poetry
+
+      - name: Install dependencies
+        run: poetry install --all-extras
+
+      - name: Run Nox
+        run: poetry run nox -s lint

@@ -1,0 +1,31 @@
+*.log
+__pycache__
+*.pyc
+*.project
+*.csv
+*.orig
+*.sublime*
+*.idea*
+*.png
+
+test_scripts/build/
+
+# C
+C/build/
+C/com.txt
+
+# Matlab
+MATLAB/logFolderConfigFile.txt
+Simulink/OpenControl/logFolderConfigFile.txt
+
+# Python
+Python/flexseapython/com_local\.txt
+Python/logFolderConfigFile.txt
+Python/flexseapython/com.txt
+Python/flexsea/flexsea/libs
+Python/flexsea/flexsea/inc
+Python/flexsea_demo/*.yaml
+dist
+*.egg-info
+build
+docs/html

@@ -1,0 +1,86 @@
+# DISTRIBUTION STATEMENT A. Approved for public release. Distribution is unlimited.
+#
+# This material is based upon work supported by the Under Secretary of Defense for Research and Engineering under Air Force Contract No. FA8702-15-D-0001. Any opinions, findings, conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the Under Secretary of Defense for Research and Engineering.
+#
+# © 2020 Massachusetts Institute of Technology.
+#
+# The software/firmware is provided to you on an As-Is basis
+#
+# Delivered to the U.S. Government with Unlimited Rights, as defined in DFARS Part 252.227-7013 or 7014 (Feb 2014). Notwithstanding any copyright notice, U.S. Government rights in this work are defined by DFARS 252.227-7013 or DFARS 252.227-7014 as detailed above. Use of this work other than as specifically authorized by the U.S. Government may violate any copyrights that exist in this work.
+#
+# P. Stegall 2020
+#
+#
+# Put the appropriate boot id in the left and right ids for the boots you are using.
+# if these values you do not have their calibration numbers, do a data collection where you:
+#    1. Hold the shoe fully dorsiflexed
+#    2. Apply a motor current which tightens the strap.
+#    3. Gradually dorsiflex the shoe till it is fully dorsiflexed
+#    4. Stop the data collection
+#    5. Use the exoTorqueCalcCal.m file changing the file path and file names.  This will produce the coefficients for this file which map the motor velocity to the ankle velocity.
+#        - poly4 = coeff<side>(1) ;  poly3 = coeff<side>(2)  etc.
+# These are the raw encoder values of a boot at its most plantar flexed position, which should be 55 degrees from the sole and shank of the boot being perpendicular.
+
+
+[ids]
+left = AB1F
+right = 0BB2
+#left = E14E
+#right = EF9F
+#left = E02C
+#right = E051
+
+[AB1F]
+ankle_reading_55_deg = 8170
+poly4 = -6.985276884624736e-14
+poly3 = 1.273622971499345e-09
+poly2 = -9.017611894231802e-06
+poly1 = 0.030573702252110
+poly0 = -33.653985267845040
+
+[0BB2]
+ankle_reading_55_deg = 184
+poly4 = -5.330907956856061e-14
+poly3 = 1.215396573820272e-09
+poly2 = -1.093486346822073e-05
+poly1 = 0.048942600274828
+poly0 = -95.500006854492640
+
+[E14E]
+ankle_reading_55_deg = 9759
+poly4 = -1.12973144317373e-13
+poly3 = 3.86871304182816e-09
+poly2 = -5.28217529276576e-05
+poly1 = 0.358757504187663
+poly0 = -1193.23758197008
+
+
+[EF9F]
+ankle_reading_55_deg = 4863
+poly4 = -1.06730907378221e-13
+poly3 = 4.13888014593781e-09
+poly2 = -6.40668214044823e-05
+poly1 = 0.495503770435619
+poly0 = -1900.85535012970
+
+[E02C]
+ankle_reading_55_deg = 9235
+poly4 = -4.97449604977863e-13
+poly3 = 1.89252469769868e-08
+poly2 = -0.000287616561874421
+poly1 = 2.18092959144068
+poly0 = -8229.10876703083
+
+
+[E051]
+ankle_reading_55_deg = 5565
+poly4 = -1.19619197144544e-13
+poly3 = 4.71138132446695e-09
+poly2 = -7.40553141906184e-05
+poly1 = 0.581466576608773
+poly0 = -2266.93123638773
+
+
+
+
+
