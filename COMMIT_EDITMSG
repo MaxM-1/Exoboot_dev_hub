@@ -1,0 +1,23 @@
+Restructure project for professional GitHub publication
+
+* Refactor code into modern Python package structure (src/exoboot_perception/)
+* Add comprehensive documentation (README.md, CONTRIBUTING.md, LICENSE)
+* Implement cross-platform compatibility (Windows 11 & Raspberry Pi 5)
+* Add proper type hints and documentation throughout codebase
+* Create professional development tools setup (pre-commit, testing, linting)
+* Establish modern Python packaging with pyproject.toml and hatchling
+* Add platform-specific installation scripts for easy setup
+* Implement proper error handling and logging capabilities
+* Create comprehensive GUI with tabbed interface and real-time visualization
+* Add experiment protocols for rise/fall time perception studies
+
+Features:
+- FlexSEA API integration for Dephy Exoboot control
+- Real-time gait detection and torque profile generation
+- Comprehensive GUI for experiment control and data collection
+- Cross-platform installation and dependency management
+- Professional code quality tools and standards
+- Complete documentation and contribution guidelines
+
+This restructure prepares the codebase for collaborative development
+and ensures compatibility across different development environments.

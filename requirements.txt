@@ -1,0 +1,19 @@
+# Core dependencies for Exoboot Perception Experiment
+# Compatible with Python 3.11+ on Windows and Linux (Raspberry Pi)
+
+# Scientific computing
+numpy>=1.24.0
+
+# Plotting and visualization
+matplotlib>=3.7.0
+
+# Serial communication for device connectivity
+pyserial>=3.5
+
+# GUI framework (usually included with Python, but listed for completeness)
+# Note: On some Linux systems, you may need to install python3-tk separately
+tk>=0.1.0
+
+# FlexSEA - Dephy's actuator control library
+# Note: This must be installed separately from the Actuator-Package-develop folder
+# Install with: pip install -e ./Actuator-Package-develop
