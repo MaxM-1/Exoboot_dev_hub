@@ -1,0 +1,12 @@
+{
+    "participant_id": "maxTest2",
+    "user_weight": 86.128,
+    "current_condition": "Rise Time",
+    "rise_time": 25.3,
+    "fall_time": 10.3,
+    "actuation_start": 26.0,
+    "actuation_end": 61.6,
+    "peak_torque": 0.225,
+    "parameter_delta": 1.0,
+    "block_length": 3
+}
