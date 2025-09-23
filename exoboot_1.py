@@ -235,18 +235,18 @@ class ExoBootController:
             
             # Update IMU data
             self.current_time = time.time() * 1000  # ms
-            self.accelx = data.accelx
-            self.accely = data.accely
-            self.accelz = data.accelz
-            self.gyrox = data.gyrox
-            self.gyroy = data.gyroy
-            self.gyroz = data.gyroz
+            self.accelx = data['accelx']
+            self.accely = data['accely']
+            self.accelz = data['accelz']
+            self.gyrox = data['gyrox']
+            self.gyroy = data['gyroy']
+            self.gyroz = data['gyroz']
             
             # Update ankle and motor data
-            self.ankle_angle = data.ank_ang
-            self.motor_angle = data.mot_ang
-            self.ankle_velocity = data.ank_vel
-            self.motor_current = data.mot_cur
+            self.ankle_angle = data['ank_ang']
+            self.motor_angle = data['mot_ang']
+            self.ankle_velocity = data['ank_vel']
+            self.motor_current = data['mot_cur']
             
             # Process heel strike detection
             self.detect_heel_strike()
