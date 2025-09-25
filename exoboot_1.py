@@ -149,8 +149,8 @@ class ExoBootController:
         try:
             print(f"\nConnecting to {'Left' if self.side == LEFT else 'Right'} Exoboot...")
             
-            # Connect to the device using the new FlexSEA API
-            self.device = Device(port=self.port, firmwareVersion=self.firmware_version)
+            # Connect to the device using the new FlexSEA API with FIXED communication settings
+            self.device = Device(port=self.port, firmwareVersion=self.firmware_version, logLevel=6)
             self.device.open()
             
             # Start streaming data
